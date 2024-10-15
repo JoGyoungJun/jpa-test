@@ -1,1 +1,11 @@
-spring.application.name=jpa-test
+# spring.application.name=jpa-test
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/test?serverTimezone=Asia/Seoul
+    username: root
+    password: 131072
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
